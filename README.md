@@ -12,3 +12,8 @@ if __name__ == "__main__":
         if not self.graph.edges:
             messagebox.showerror("Error", "No edges added to the graph.")
             return
+             # Draw the graph
+        GraphOperations.draw_graph(self.graph)
+        
+        # Detect deadlock
+        deadlock, cycle = GraphOperations.detect_deadlock(self.graph)
