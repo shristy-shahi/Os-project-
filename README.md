@@ -14,6 +14,6 @@ if __name__ == "__main__":
             return
              # Draw the graph
         GraphOperations.draw_graph(self.graph)
-        
+        shhhh
         # Detect deadlock
         deadlock, cycle = GraphOperations.detect_deadlock(self.graph)
