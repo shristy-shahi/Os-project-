@@ -18,5 +18,8 @@ if __name__ == "__main__":
         deadlock, cycle = GraphOperations.detect_deadlock(self.graph)
         if deadlock:
             messagebox.showwarning("Deadlock Detected", f"Deadlock found in cycle: {cycle}")
+            else:
+            messagebox.showinfo("No Deadlock", "No deadlock detected.")
+
           
         
